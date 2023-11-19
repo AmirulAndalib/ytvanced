@@ -7,18 +7,24 @@ assignees: ''
 
 ---
 
-PLEASE FILL OUT THIS FORM, DO NOT CREATE ISSUE WITHOUT THIS FORM, OTHERWISE, ISSUE WILL CLOSE WITHOUT ANY NOTICE OR CONVERT TO DISCUSSION. ALSO DO NOT REPORT ISSUE FROM ANY BUILD OLDER THAN 18.28.33 or v6.xx.xx+.
+PLEASE FILL OUT THIS FORM, DO NOT CREATE ISSUE WITHOUT THIS FORM, OTHERWISE, ISSUE WILL CLOSE WITHOUT ANY NOTICE OR CONVERT TO DISCUSSION.
+Make sure that bug only exists on Vanced+ app and NOT in original YouTube app with the same base version of Vanced+ !!!!!
 
 Environment
 ===========
-Platform:Android
-OS Version:
-YouTube Vanced Version:
-Vanced MicroG:
-Device:
+Platform: Android
+
+Android Version: 
+
+YouTube Vanced+ Version: 
+
+Vanced+ MicroG version :
+
+Device name :
 
 Description
 ===========
+
 
 
 Steps to reproduce
