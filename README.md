@@ -27,17 +27,17 @@ Another YouTube Vanced Unofficial project named YouTube Vanced+ [WIP] maintained
 * [Credits](#credits)
 * [Features](#features)
 * [Known issues](#known-issues)
-* [Download YouTube Vanced apk](#download)
+* [Download YouTube Vanced+ APKs](#download)
+* [Building YouTube Vanced+ from source](#building)
 * [Troubleshoot](#troubleshoot)
 * [Source code](#source-code)
 * [Stargazers over time](#stargazers-over-time)
-* [Donate and help project development (Not required)](#donations)
 
 # Introduction 
 This project was created after discontinuation of Vanced official aswell wars between Unofficial Vanced and ReVanced Extended. Its not `YouTube Vanced` and just is the CLONE of `YouTube Vanced`. The project are in development and will going release soon as possible!
 
 # Features 
-- Same as Official `YouTube Vanced`
+- Almost same as Official `YouTube Vanced`
 - YouTube Vanced+ blocks ads from YouTube and uses SponsorBlock to skip in-video sponsor segments
 - The picture-in-picture mode allows watching videos in a floating window
 - Background play allows playing video sound in background
@@ -66,12 +66,47 @@ Join YouTube Vanced+ Community/Updates channel to receive patches & release & ne
 
 ### YouTube Vanced+ non-root variant 
 
+Current Version : **XX.XX.XX** | **[Older version](https://github.com/cuynu/ytvancedx/releases)**
+
+Minimum Android version : **9+ (Pie)**
+
 **[Download latest version of Vanced MicroG](https://github.com/cuynu/VancedMicroG/releases/latest/download/microg.apk)**
 
 Not yet right now! wait for we implement, check for implement status in community above~~
 
-### YouTube Vanced+ root variant (Magisk/KSU) 
+-----------------
+
+### YouTube Vanced+ root variant (Magisk/KernelSU) 
+
+Notice : Install **[detach module](https://github.com/j-hc/zygisk-detach/releases)** to prevent Play Store from update and replace installed Vanced+. If you are using microG services core as replacement for GMS, enable `Fix video playback issue` on Vanced+ settings -> Video to fix buffering issue !
+
+Current Version : **XX.XX.XX** | **[Older version](https://github.com/cuynu/ytvancedx/releases)**
+
+Minimum Android version : **9+ (Pie)**
+
 Not yet right now! wait for we implement, check for implement status in community above~~
+
+-----------------
+
+### YouTube Music Vanced+ non-root variant
+
+**[Download latest version of Vanced+ MicroG](https://github.com/cuynu/VancedxMicroG/releases)**
+
+Current Version : **X.XX.XX** | **[Older version](https://github.com/cuynu/ytvancedx/releases)**
+
+Minimum Android version : **9+ (Pie)**
+
+Not yet right now! wait for we implement, check for implement status in community above~~
+
+-----------------
+
+### YouTube Music Vanced+ root variant
+
+Notice : Install **[detach module](https://github.com/j-hc/zygisk-detach/releases)** to prevent Play Store from update and replace installed Vanced+.
+
+Not yet right now! wait for we implement, check for implement status in community above~~
+
+-----------------
 
 ### YouTube Vanced non-root variant (DEPRECATED)
 
@@ -188,6 +223,84 @@ Solution for old YouTube Vanced (RVX) 17.34.36/17.39.35/18.02.33/18.21.34 :
 
 If you can't install YouTube Vanced+ in MIUI, try turn off MIUI Optimization in Developer options then try install again or using MIUI default File Manager to install.
 
+--------------
+
+### Building
+
+**Building from Vanced+ source code**
+
+**CAUTION : Only Android & Linux are supported !!!**
+
+**WSL/Mac users will get this warning :** `vancedx-cli are not allowed under this environment, quiting...`
+
+Clone essential repository
+
+`git clone https://gitlab.com/cuynu/vancedx-patches.git` 
+
+`git clone https://gitlab.com/cuynu/vancedx-integrations.git`
+
+`git clone https://gitlab.com/cuynu/vancedx-cli.git`
+
+Open `vancedx-patches` repository in IntelliJ IDEA, make your changes and compile it, output should be `vancedx-patches-vX.XXX.jar`
+
+Open `vancedx-integrations` repository in Android Studio, make your change and compile it, output should be `vancedx-integrations-vX.XXX.apk`
+
+Open `vancedx-cli` repository in IntelliJ IDEA, make your change and compile it, output should be `vancedx-cli-vX.XXX.jar`
+
+**Patching YouTube app**
+
+- For Android users or who lazy to bulit patches & integrations & cli from source, use pre-bulit package here : 
+
+[vancedx-patches pre-bulit](https://gitlab.com/cuynu/vancedx-patches/-/releases) 
+
+[vancedx-integrations pre-bulit](https://gitlab.com/cuynu/vancedx-integrations/-/releases) 
+
+
+[vancedx-cli pre-bulit](https://gitlab.com/cuynu/vancedx-cli/-/releases)
+
+**Linux :**
+- Make sure you have installed `openjdk-17`
+- Compile all of essential components or download pre-bulit package above
+- Download YouTube or YouTube Music apk (not apks,apkm) and rename it to youtube.apk (YouTube), ytm.apk (for YouTube Music)
+- Use Command below to patch.
+
+**Android :**
+- Install [Termux](https://termux.dev/en/), open and install openjdk `pkg install openjdk-17` `y` 
+- type `curl -sLo vancedx-patches.jar [paste download url]`
+- type `curl -sLo vancedx-integrations.apk [paste download url]`
+- type `curl -sLo vancedx-cli.jar [paste download url]`
+- Download YouTube or YouTube Music apk (not apks,apkm) and rename it to youtube.apk (YouTube), ytm.apk (for YouTube Music)
+- Use Command below to patch.
+
+
+ **Command & example**
+
+**YouTube (Linux) (dont run as sudo !) :**
+
+`java -jar 'vancedx-cli-vX.XXX.jar' -p 'vancedx-patches-vX.XXX.jar' -i 'vancedx-integrations-vX.XXX.apk' -lp 'patch-name' --jks 'yourjkskey.jks' --input 'youtube.apk' --output '/VancedXAPKs/base-vx.apk'`
+
+**YouTube Music (Linux) (dont run as sudo !) :**
+
+`java -jar 'vancedx-cli-vX.XXX.jar' -p 'vancedx-patches-vX.XXX.jar' -i 'vancedx-integrations-vX.XXX.apk' -lp 'patch-name-music' --jks 'yourjkskey.jks' --input 'ytm.apk' --output '/VancedXAPKs/base-vx.apk'`
+
+**YouTube (Termux):**
+
+`java -jar 'vancedx-cli.jar' -p 'vancedx-patches.jar' -i 'vancedx-integrations.apk' -lp 'patch-name' --jks 'yourjkskey.jks' --input '/sdcard/Download/youtube.apk' --output '/VancedXAPKs/base-vx.apk'`
+
+**YouTube Music (Termux):**
+
+`java -jar 'vancedx-cli.jar' -p 'vancedx-patches.jar' -i 'vancedx-integrations.apk' -lp 'patch-name-music' --jks 'yourjkskey.jks' --input '/sdcard/Download/ytm.apk' --output '/VancedXAPKs/base-vx.apk'`
+
+Tips : If you getting `Error: Invalid or corrupt jarfile`, redownload essential components then try again.
+
+After patching process, its will generate base-vx.apk in `/sdcard/VancedXAPKs` (Android) or `/home/username/VancedXAPKs` (Linux)
+
+For non-root users, install Vanced+ microG and patched `base-vx.apk` then enjoy !
+
+For root users, follow additional steps on **[Vanced+ Module Template](https://gitlab.com/cuynu/vancedx-module-template)** !
+
+--------------
+
 # Credits
 
 **[Team Vanced](https://github.com/TeamVanced)** : Old YouTube Vanced official which is closed source
@@ -206,15 +319,5 @@ If you can't install YouTube Vanced+ in MIUI, try turn off MIUI Optimization in 
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/cuynu/ytvancedx.svg)](https://starchart.cc/cuynu/ytvancedx)
-
-
-## Donations
-**Disclaimer** : **Donation is NOT REQUIRED**, you have the right to decide whether to donate or not, it's your decision. **NO DRAMA AT ALL!**
-
- <p align="left">
-    <a href="https://github.com/sponsors/cuynu"><img src="https://img.shields.io/badge/Support%20Project-%E2%9D%A4-%23db61a2.svg?&logo=github&logoColor=white&labelColor=181717&style=flat-square" alt="Badage"></img></a>
-
-## Vietnam inland donation :
-**Chuyển khoản tới Momo & MB : 0395923562**
 
 ## [Go back to top of this page](#youtube-vanced-wip)
