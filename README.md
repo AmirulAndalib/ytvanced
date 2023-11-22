@@ -1,5 +1,5 @@
 # YouTube Vanced+ [WIP]
-**Modification of YouTube/YouTube Music app for Android with ad-free, background playback and many other tweaks, our aim is open source everything we modified for YouTube/YouTube Music !**
+Modification of YouTube/YouTube Music app for Android with ad-free, background playback and many other tweaks, our aim is open source everything we modified for YouTube/YouTube Music !
 
 <a href="https://github.com/cuynu/ytvancedx#download">
 <img alt="YouTube Vanced+ logo" src="https://github.com/cuynu/archive/releases/download/archive/vancedx_banner.jpeg" width="270" height="150" />
@@ -22,6 +22,12 @@
    <img src="https://img.shields.io/github/forks/cuynu/ytvancedx?style=social" alt="Badge"/>
 </p>
 
+</p> <a href="https://telegram.me/ytvancedxupdates" ><img src="https://img.shields.io/badge/YouTube Vanced+ Community-2CA5E0?style=for-the-badge&logo=telegram&logoColor=dark"></a> 
+<p align="left">
+  <a href="https://discord.gg/U7z2hsxbyM">
+    <img alt="Discord" src="https://img.shields.io/discord/1077997663628296333?color=%2300C853&label=YouTube%20VancedX%20Server&logo=discord&logoColor=%2300C853&style=for-the-badge">
+  </a>
+</p>
 ## Table of Contents (Quick navigation) 
 
 * [Credits](#credits)
@@ -51,15 +57,6 @@ This project was created after discontinuation of Vanced official aswell wars be
 - **Custom video speed**
 - **Enable YouTube Premium header (not actually enable Premium features!)**
 - *Many more...*
-
-# Community/Updates channel
-Join YouTube Vanced+ Community/Updates channel to receive patches & release & news updates and discuss with other people on us community! 
-</p> <a href="https://telegram.me/ytvancedxupdates" ><img src="https://img.shields.io/badge/YouTube Vanced+ Community-2CA5E0?style=for-the-badge&logo=telegram&logoColor=dark"></a> 
-<p align="left">
-  <a href="https://discord.gg/U7z2hsxbyM">
-    <img alt="Discord" src="https://img.shields.io/discord/1077997663628296333?color=%2300C853&label=YouTube%20VancedX%20Server&logo=discord&logoColor=%2300C853&style=for-the-badge">
-  </a>
-</p>
 
 # Download  
 
