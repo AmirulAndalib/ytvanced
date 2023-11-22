@@ -28,6 +28,7 @@ Modification of YouTube/YouTube Music app for Android with ad-free, background p
     <img alt="Discord" src="https://img.shields.io/discord/1077997663628296333?color=%2300C853&label=YouTube%20VancedX%20Server&logo=discord&logoColor=%2300C853&style=for-the-badge">
   </a>
 </p>
+
 ## Table of Contents (Quick navigation) 
 
 * [Credits](#credits)
