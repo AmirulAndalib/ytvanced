@@ -69,7 +69,7 @@ Current Version : **XX.XX.XX** | **[Older version](https://github.com/cuynu/ytva
 
 Minimum Android version : **9+ (Pie)**
 
-**[Download latest version of Vanced MicroG](https://github.com/cuynu/VancedMicroG/releases/latest/download/microg.apk)**
+**[Download latest version of Vanced MicroG](https://gitlab.com/cuynu/VancedxMicroG/-/releases)**
 
 Not yet right now! wait for we implement, check for implement status in community above~~
 
@@ -89,7 +89,7 @@ Not yet right now! wait for we implement, check for implement status in communit
 
 ### YouTube Music Vanced+ non-root variant
 
-**[Download latest version of Vanced+ MicroG](https://github.com/cuynu/VancedxMicroG/releases)**
+**[Download latest version of Vanced+ MicroG](https://gitlab.com/cuynu/VancedxMicroG/-/releases)**
 
 Current Version : **X.XX.XX** | **[Older version](https://github.com/cuynu/ytvancedx/releases)**
 
@@ -111,7 +111,7 @@ Not yet right now! wait for we implement, check for implement status in communit
 
 These version are deprecated but still works, this will get removed here in future after Vanced+ finally launch!
 
-**[Download latest version of Vanced MicroG](https://github.com/cuynu/VancedMicroG/releases/latest/download/microg.apk)**
+**[Download latest version of Vanced MicroG](https://gitlab.com/cuynu/VancedxMicroG/-/releases)**
 
 **[YouTube Vanced 18.21.34 (LAST) (RVX) (ARCHIVED)](https://github.com/cuynu/archive/releases/tag/18.21.34)**
 
